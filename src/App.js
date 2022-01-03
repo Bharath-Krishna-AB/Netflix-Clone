@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Banner from './components/Banner/Banner';
 import Navbar from './components/Navbar/Navbar';
@@ -5,8 +6,10 @@ import Navbar from './components/Navbar/Navbar';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Banner/>
+      <Routes>
+        <Route path='/' element={<Navbar/>}/>
+      </Routes>
+
     </div>
   );
 }

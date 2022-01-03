@@ -1,0 +1,53 @@
+.Banner{
+    width: 100%;
+    height: 39rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    color: white;
+    flex-direction: column;
+    display: flex;
+    padding-top: 13rem;
+    height: 190px;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.title{
+    font-size: 2.5rem; 
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttons{
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: ease-in 0.5s;
+}
+
+.buttons:hover{
+    color: black;
+    background-color: #e6e6e6;
+}
+
+.description{
+    margin-top: .5rem;
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    max-width: 450px;
+}

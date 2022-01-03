@@ -1,8 +1,9 @@
 import React from 'react'
+import './Banner.css'
 
 function Banner() {
     return (
-        <section className='Banner'>
+        <section className='Banner' style={{backgroundImage: `url(https://images.indianexpress.com/2020/01/kurup-first-look-dq-1200.jpg)`}}>
             <div className="content">
                 <h1>Movie Title</h1>
                 <div className="banner-buttons">

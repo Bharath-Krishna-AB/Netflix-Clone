@@ -20,6 +20,7 @@ function Banner() {
                 </div>
                 <p className="description">{movie.overview}</p>
             </div>
+            <div className="fade_bottom"></div>
         </section>
     )
 }

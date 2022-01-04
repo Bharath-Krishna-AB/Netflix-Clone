@@ -1,15 +1,15 @@
 
-.VideoArea{
+.VideoPlayer{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.VideoPlayer{
+.VideoArea{
     width: 100%;
-    height: 56rem;
+    height: 100%;
 }
 
 .goBack-btn{

@@ -12,13 +12,13 @@ function VideoPlayer() {
         setVideo(BannerData[id].videoUrl)
     }, [])
     return (
-        <section className="VidePlayer">
+        <section className="VideoPlayer">
               <div  className="goBack-container">
                 <i onClick={()=>{
                     navigate('/')
                 }} className="arrow fas fa-arrow-left"></i>
             </div>
-     <video className='VideoPlayer'  controls autoPlay src={video}></video> 
+     <video className='VideoArea'  controls autoPlay src={video}></video> 
      
         </section>
     )

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { BannerData } from '../../movie-objectDatas/BannerObj'
+import './Poster.css'
 
 function Poster({title}) {
     const [movie, setMovie] = useState([])

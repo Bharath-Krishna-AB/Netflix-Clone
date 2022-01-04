@@ -1,0 +1,33 @@
+.Poster{
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.posters{
+    display: flex; 
+     padding: 1.3rem;
+     overflow-x: scroll;
+     overflow-y: hidden;
+}
+
+.Poster-title{
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    max-height: 24rem; 
+    margin-right: 0.8rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}

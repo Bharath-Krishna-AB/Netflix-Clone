@@ -9,7 +9,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/video/:id' element={<VideoArea/>}/>
-
       </Routes>
 
     </div>

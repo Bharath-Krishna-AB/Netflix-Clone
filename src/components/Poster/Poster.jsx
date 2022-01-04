@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { BannerData } from '../../movie-objectDatas/BannerObj'
 import './Poster.css'
 
 function Poster({title}) {
+    const navigate = useNavigate()
     const [movie, setMovie] = useState([])
 
     useEffect(() => {
@@ -18,7 +20,9 @@ function Poster({title}) {
              {
                  movie.map((data)=>{
                      return(
-                        <img className='card' src={data.poster_path} alt="" />
+                        <img className='card' onClick={()=>{
+                            navigate(`/video/${data.id}`)
+                        }} src={data.poster_path} alt="" />
                      )
 
                  })

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { BannerData } from '../../movie-objectDatas/BannerObj'
+import './VideoPlayer.css'
 
 function VideoPlayer() {
     const navigate = useNavigate()

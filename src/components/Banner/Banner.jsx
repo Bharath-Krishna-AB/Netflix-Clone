@@ -15,7 +15,7 @@ function Banner() {
     return (
         <section className='Banner' style={{backgroundImage: `url(${movie.backdrop_path})`}}>
             <div className="content">
-                <h1>{movie.title}</h1>
+                <h1 className='title'>{movie.title}</h1>
                 <div className="banner-buttons">
                     <button className="buttons" onClick={()=>{
                         navigate(`/video/${movie.id}`)

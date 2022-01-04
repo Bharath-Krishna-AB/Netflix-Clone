@@ -13,7 +13,7 @@ function Banner() {
 
 
     return (
-        <section className='Banner' style={{backgroundImage: `url(${movie.backdrop_path})`}}>
+        <section className='Banner' id="Home" style={{backgroundImage: `url(${movie.backdrop_path})`}}>
             <div className="content">
                 <h1 className='title'>{movie.title}</h1>
                 <div className="banner-buttons">

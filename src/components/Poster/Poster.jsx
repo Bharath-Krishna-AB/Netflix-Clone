@@ -3,12 +3,16 @@ import { useNavigate } from 'react-router-dom'
 import { BannerData } from '../../movie-objectDatas/BannerObj'
 import './Poster.css'
 
-function Poster({title}) {
+function Poster({title,orignals,genreData}) {
     const navigate = useNavigate()
     const [movie, setMovie] = useState([])
 
     useEffect(() => {
-        setMovie(BannerData)
+        if(orignals){
+        setMovie(genreData)
+        }else{
+            
+        }
     }, [])
 
 

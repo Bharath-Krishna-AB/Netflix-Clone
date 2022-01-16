@@ -19,7 +19,6 @@ function VideoPlayer() {
                 }} className="arrow fas fa-arrow-left"></i>
             </div>
      <video className='VideoArea'  controls autoPlay src={video}></video> 
-     
         </section>
     )
 }

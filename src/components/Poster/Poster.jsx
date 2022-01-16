@@ -29,7 +29,7 @@ function Poster({title,originals,genreData}) {
                  console.log(data);
                      return(
                         <img key={data.id} className='card' onClick={()=>{
-                            navigate(`/video/${data.id}`)
+                            navigate(`/video/${originals ? 'Banner': "Poster"}/${data.id}`)
                         }} src={originals ? data.poster_path : IMAGE_URL+data.poster_path } alt="" />
                      )
 

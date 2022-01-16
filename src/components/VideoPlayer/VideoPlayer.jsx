@@ -1,16 +1,34 @@
+import axios from '../../axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { BannerData } from '../../movie-objectDatas/BannerObj'
 import './VideoPlayer.css'
+import { API_KEY } from '../../constants/constants'
+import YouTube from 'react-youtube'
 
 function VideoPlayer() {
     const navigate = useNavigate()
     const [video, setVideo] = useState('')
-    const {id} = useParams()
+    const {id,location} = useParams()
 
     useEffect(() => {
+        if(location == 'Banner'){
         setVideo(BannerData[id].videoUrl)
+        }else if(location == 'Poster'){
+            axios.get(`/movie/${id}/videos?api_key=${API_KEY}&language=en-US`).then((response)=>{
+                setVideo(response.data.results[0].key)
+            })
+        }
     }, [])
+
+
+    const opts = {
+        playerVars: {
+          autoplay: 1,
+        },
+    }
+
+
     return (
         <section className="VideoPlayer">
               <div  className="goBack-container">
@@ -18,7 +36,9 @@ function VideoPlayer() {
                     navigate('/')
                 }} className="arrow fas fa-arrow-left"></i>
             </div>
-     <video className='VideoArea'  controls autoPlay src={video}></video> 
+            {location == 'Banner' ? <video className='VideoArea'  controls autoPlay src={video}></video> :
+            <YouTube opts={opts} videoId= {video ? video: ''}/>
+            }
         </section>
     )
 }

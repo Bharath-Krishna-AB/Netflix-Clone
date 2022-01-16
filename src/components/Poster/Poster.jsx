@@ -2,7 +2,7 @@ import axios from '../../axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Poster.css'
-import { IMAGE_URL } from '../../constants/constants'
+import { IMAGE_URL, POSTER_IMAGE_URL } from '../../constants/constants'
 
 function Poster({title,originals,genreData}) {
     const navigate = useNavigate()
@@ -29,7 +29,7 @@ function Poster({title,originals,genreData}) {
                      return(
                         <img key={data.id} className='card' onClick={()=>{
                             navigate(`/video/${originals ? 'Banner': "Poster"}/${data.id}`)
-                        }} src={originals ? data.poster_path : IMAGE_URL+data.poster_path } alt="" />
+                        }} src={originals ? `${data.poster_path}` : `${POSTER_IMAGE_URL+data.backdrop_path}` } alt="" />
                      )
 
                  })}

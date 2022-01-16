@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import './Navbar.css'
 
 function Navbar() {
+
+    const [scroll, setScroll] = useState(false)
+
+    useEffect(() => {
+        window.addEventListener("scroll", ()=>{
+            if(window.scrollY > 100){
+                setScroll(true)
+            }else{
+                setScroll(false)
+            }
+        } )
+        return () => {
+            window.removeEventListener('scroll')
+        }
+    }, [])
+
+
     return (
-        <nav className='Navbar'>
+        <nav className={`Navbar ${scroll ? 'BlackNav': ''}`}>
             <div className='left-side'>
             <a className='Logo-Link' href="#Home">
             <img  className='logo' src="Assets/images/Netflix-Logo.png" alt="" />

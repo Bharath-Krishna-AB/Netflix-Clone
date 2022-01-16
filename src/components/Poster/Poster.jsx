@@ -26,7 +26,6 @@ function Poster({title,originals,genreData}) {
          <div className="posters">
              
              {movie.map((data)=>{
-                 console.log(data);
                      return(
                         <img key={data.id} className='card' onClick={()=>{
                             navigate(`/video/${originals ? 'Banner': "Poster"}/${data.id}`)

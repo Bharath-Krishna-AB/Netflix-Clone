@@ -37,7 +37,7 @@ function VideoPlayer() {
                 }} className="arrow fas fa-arrow-left"></i>
             </div>
             {location == 'Banner' ? <video className='VideoArea'  controls autoPlay src={video}></video> :
-            <YouTube opts={opts} videoId= {video ? video: ''}/>
+            <YouTube className='Youtube-videoArea' opts={opts} videoId= {video ? video: ''}/>
             }
         </section>
     )

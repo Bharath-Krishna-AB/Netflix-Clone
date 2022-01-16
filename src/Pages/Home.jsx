@@ -11,7 +11,7 @@ function Home() {
             <Navbar/>
             <Banner/>
             <Poster title='Netflix-Originals' genreData={BannerData} originals={true}/>
-            <Poster title='Action' genreData={ACTION} originals={true}/>
+            <Poster title='Action' genreData={ACTION} originals={false}/>
         </Fragment>
     )
 }

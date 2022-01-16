@@ -1,13 +1,22 @@
+import axios from '../../axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Poster.css'
+import { IMAGE_URL } from '../../constants/constants'
 
 function Poster({title,originals,genreData}) {
     const navigate = useNavigate()
     const [movie, setMovie] = useState([])
 
     useEffect(() => {
+        if(originals){
         setMovie(genreData)
+        }else{
+            axios.get(genreData).then((response)=>{
+                console.log(response.data.results);
+                setMovie(response.data.results)
+            })
+        }
     }, [])
 
     return (
@@ -17,10 +26,11 @@ function Poster({title,originals,genreData}) {
          <div className="posters">
              
              {movie.map((data)=>{
+                 console.log(data);
                      return(
                         <img key={data.id} className='card' onClick={()=>{
                             navigate(`/video/${data.id}`)
-                        }} src={data.poster_path} alt="" />
+                        }} src={originals ? data.poster_path : IMAGE_URL+data.poster_path } alt="" />
                      )
 
                  })}

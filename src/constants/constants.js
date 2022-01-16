@@ -4,3 +4,10 @@ export const IMAGE_URL = 'https://image.tmdb.org/t/p/original/'
 export const POSTER_IMAGE_URL = 'https://image.tmdb.org/t/p/w300/'
 
 export const ACTION = `/discover/movie?api_key=${API_KEY}&with_genres=28`
+
+export const DRAMA = `/discover/movie?api_key=${API_KEY}&with_genres=18`
+
+export const THRILLER = `/discover/movie?api_key=${API_KEY}&with_genres=53`
+
+export const HORROR = `/discover/movie?api_key=${API_KEY}&with_genres=27`
+

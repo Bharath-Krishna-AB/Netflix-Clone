@@ -12,6 +12,9 @@ function VideoPlayer() {
     const {id,location} = useParams()
 
     useEffect(() => {
+        let isMounted = true;  
+        if(isMounted){
+
         if(location == 'Banner'){
         setVideo(BannerData[id].videoUrl)
         }else if(location == 'Poster'){
@@ -19,6 +22,8 @@ function VideoPlayer() {
                 setVideo(response.data.results[0].key)
             })
         }
+    }
+        return () =>  isMounted = false 
     }, [])
 
 

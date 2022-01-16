@@ -2,7 +2,7 @@ import React,{Fragment} from 'react'
 import Banner from '../components/Banner/Banner'
 import Navbar from '../components/Navbar/Navbar'
 import Poster from '../components/Poster/Poster'
-import { ACTION, DRAMA, THRILLER } from '../constants/constants'
+import { ACTION, DRAMA, HORROR, THRILLER } from '../constants/constants'
 import { BannerData } from '../movie-objectDatas/BannerObj'
 
 function Home() {
@@ -14,7 +14,7 @@ function Home() {
             <Poster title='Action' genreData={ACTION} originals={false}/>
             <Poster title='Drama' genreData={DRAMA} originals={false}/>
             <Poster title='Thriller' genreData={THRILLER} originals={false}/>
-
+            <Poster title='Horror' genreData={HORROR} originals={false}/>
         </Fragment>
     )
 }

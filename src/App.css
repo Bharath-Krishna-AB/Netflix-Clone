@@ -18,3 +18,7 @@ html{
 ::selection {
  background: none;
 }
+
+::-webkit-scrollbar{
+  display: none;
+}

@@ -38,7 +38,7 @@ function VideoPlayer() {
         <section className="VideoPlayer">
               <div  className="goBack-container">
                 <i onClick={()=>{
-                    navigate('/')
+                    navigate('/browse')
                 }} className="arrow fas fa-arrow-left"></i>
             </div>
             {location == 'Banner' ? <video className='VideoArea'  controls autoPlay src={video}></video> :

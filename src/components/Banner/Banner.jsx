@@ -18,7 +18,7 @@ function Banner() {
                 <h1 className='title'>{movie.title}</h1>
                 <div className="banner-buttons">
                     <button className="buttons" onClick={()=>{
-                        navigate(`/video/Banner/${movie.id}`)
+                        navigate(`/browse/video/Banner/${movie.id}`)
                     }}>Play</button>
                     <button className="buttons">My list</button>
                 </div>

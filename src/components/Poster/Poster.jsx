@@ -28,7 +28,7 @@ function Poster({title,originals,genreData}) {
              {movie.map((data)=>{
                      return(
                         <img key={data.id} className='card' onClick={()=>{
-                            navigate(`/video/${originals ? 'Banner': "Poster"}/${data.id}`)
+                            navigate(`/browse/video/${originals ? 'Banner': "Poster"}/${data.id}`)
                         }} src={originals ? `${data.poster_path}` : `${POSTER_IMAGE_URL+data.backdrop_path}` } alt="" />
                      )
 

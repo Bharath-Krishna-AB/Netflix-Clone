@@ -199,4 +199,13 @@
         'id' : '21',
         'mylist' : 'far'
     },
+    {
+        'backdrop_path': "/Assets/Images/Doctor_Strange.jpg",
+        "title": "Doctor Strange in the Multiverse of Madness",
+        "overview": "After the events of Avengers: Endgame, Dr. Stephen Strange continues his research on the Time Stone. But an old friend turned enemy seeks to destroy every sorcerer on Earth, messing with Strange’s plan and also causing him to unleash an unspeakable evil.",
+        "videoUrl":  "/Assets/video/Doctor_Strange_trailer.mp4",
+        'poster_path': '/Assets/Images/Doctor_Strange_Poster.jpg',
+        'id' : '22',
+        'mylist' : 'far'
+    },
 ]

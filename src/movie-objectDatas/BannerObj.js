@@ -145,4 +145,13 @@
         'id' : '15',
         'mylist' : 'far'
     },
+    {
+        'backdrop_path': "/Assets/Images/Bro_Daddy.jpg",
+        "title": "Bro Daddy",
+        "overview": "The plot revolves around the life of a family man. Unexpected events happen in their house. The brother and father decide to take on the challenges.",
+        "videoUrl":  "/Assets/video/Bro_Daddy_trailer.mp4",
+        'poster_path': '/Assets/Images/Bro_Daddy_Poster.jpg',
+        'id' : '16',
+        'mylist' : 'far'
+    },
 ]

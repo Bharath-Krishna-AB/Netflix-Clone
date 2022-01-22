@@ -118,4 +118,13 @@
         'id' : '12',
         'mylist' : 'far'
     },
+    {
+        'backdrop_path': "/Assets/Images/Shyam_Singha_Roy.jpg",
+        "title": "Shyam Singha Roy",
+        "overview": "A young filmmaker is in a soup right when he’s about to find his footing in the film industry. When he sets out to find an answer, turns out it’s in the past.",
+        "videoUrl":  "/Assets/video/Shyam_Singha_Roy_trailer.mp4",
+        'poster_path': '/Assets/Images/Shyam_Singha_Roy_Poster.jpg',
+        'id' : '13',
+        'mylist' : 'far'
+    },
 ]

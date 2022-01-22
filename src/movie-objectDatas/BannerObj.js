@@ -136,4 +136,13 @@
         'id' : '14',
         'mylist' : 'far'
     },
+    {
+        'backdrop_path': "/Assets/Images/Master.jpg",
+        "title": "Master",
+        "overview": "An alcoholic professor is sent to a juvenile school, where he clashes with a gangster, who uses the children of the school for criminal activities.",
+        "videoUrl":  "/Assets/video/Master_trailer.mp4",
+        'poster_path': '/Assets/Images/Master_Poster.jpg',
+        'id' : '15',
+        'mylist' : 'far'
+    },
 ]

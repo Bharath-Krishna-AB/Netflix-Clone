@@ -1,10 +1,11 @@
 import React from 'react';
+import './Signup.css'
 
 function Signup() {
   return (
-      <section className='Signup'>
-          <h1>Signup</h1>
-          <img  className='logo' src="Assets/images/Netflix-Logo.png" alt="" />
+      <section className='Signup' style={{backgroundImage: `url()`}}>
+          <img  className='Signuplogo' src="Assets/images/Netflix-Logo.png" alt="" />
+          <img className='background-Banner-Netflix' src="Assets/images/background-Banner-Netflix.jpg" alt="" />
       </section>
   )
 }

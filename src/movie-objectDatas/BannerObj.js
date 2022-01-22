@@ -172,4 +172,13 @@
         'id' : '18',
         'mylist' : 'far'
     },
+    {
+        'backdrop_path': "/Assets/Images/Bhramam.jpg",
+        "title": "Bhramam",
+        "overview": "A pianist pretends to be blind for inspiration, witnesses a murder. He suddenly finds himself in a blind spot with the victim's wife, the murderer. During this ordeal, he loses his eyesight for real. Will his girlfriend believe him?",
+        "videoUrl":  "/Assets/video/Bhramam_trailer.mp4",
+        'poster_path': '/Assets/Images/Bhramam_Poster.jpg',
+        'id' : '19',
+        'mylist' : 'far'
+    },
 ]

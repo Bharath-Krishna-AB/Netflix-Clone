@@ -181,4 +181,13 @@
         'id' : '19',
         'mylist' : 'far'
     },
+    {
+        'backdrop_path': "/Assets/Images/Sooryavanshi.jpg",
+        "title": "Sooryavanshi",
+        "overview": "A fearless, faithful albeit slightly forgetful Mumbai cop, Veer Sooryavanshi, the chief of the Anti-Terrorism Squad in India pulls out all the stops and stunts to thwart a major conspiracy to attack his city.",
+        "videoUrl":  "/Assets/video/Sooryavanshi_trailer.mp4",
+        'poster_path': '/Assets/Images/Sooryavanshi_Poster.jpg',
+        'id' : '20',
+        'mylist' : 'far'
+    },
 ]

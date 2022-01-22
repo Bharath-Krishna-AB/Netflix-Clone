@@ -190,4 +190,13 @@
         'id' : '20',
         'mylist' : 'far'
     },
+    {
+        'backdrop_path': "/Assets/Images/Shang-Chi.jpg",
+        "title": "Shang-Chi and the Legend of the Ten Rings",
+        "overview": "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+        "videoUrl":  "/Assets/video/Shang-Chi_trailer.mp4",
+        'poster_path': '/Assets/Images/Shang-Chi_Poster.jpg',
+        'id' : '21',
+        'mylist' : 'far'
+    },
 ]

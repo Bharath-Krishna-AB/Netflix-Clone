@@ -154,4 +154,13 @@
         'id' : '16',
         'mylist' : 'far'
     },
+    {
+        'backdrop_path': "/Assets/Images/War.jpg",
+        "title": "War",
+        "overview": "Khalid, is entrusted with the task of eliminating Kabir, a former soldier turned rogue, as he engages in an epic battle with his mentor who had taught him everything",
+        "videoUrl":  "/Assets/video/War_trailer.mp4",
+        'poster_path': '/Assets/Images/War_Poster.jpg',
+        'id' : '17',
+        'mylist' : 'far'
+    },
 ]

@@ -127,4 +127,13 @@
         'id' : '13',
         'mylist' : 'far'
     },
+    {
+        'backdrop_path': "/Assets/Images/V.jpg",
+        "title": "V",
+        "overview": "DCP Aditya, a celebrated cop, faces his most unsettling case yet involving a mysterious serial killer who has been brutally killing his targets and leaving behind notes challenging Aditya to nab him. Teaming with Apoorva, an aspiring crime novelist, and the police force, Aditya finds himself walking on thin ice upon discovering the killer has another challenge for him: to prevent four more murders from happening or give up his medals and resign. What he is yet to find out is the killer's past and his desperation to carry out the killing spree without fail.",
+        "videoUrl":  "/Assets/video/V_trailer.mp4",
+        'poster_path': '/Assets/Images/V_Poster.jpg',
+        'id' : '14',
+        'mylist' : 'far'
+    },
 ]

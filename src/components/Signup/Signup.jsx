@@ -7,12 +7,24 @@ function Signup() {
           <img  className='Signuplogo' src="Assets/images/Netflix-Logo.png" alt="" />
           <img className='background-Banner-Netflix' src="Assets/images/background-Banner-Netflix.jpg" alt="" />
           <div className="Signup-Container">
-              <h1 className='SignIn-heading' >Sign In</h1>
               <div className="form-container">
-                  <form action="">
-                      <input className='input-field' type="text" placeholder='Email or phone number' />
-                      <input className='input-field' type="text" placeholder='Password' />
-                      <input type="submit" />
+                  <div className='heading-container'>
+              <h1 className='Signup-heading' >Sign Up</h1>
+              </div>
+                  <form className='form' action="">
+                      <label className='input-container'>
+                      <input className='input-field' type="text"/>
+                      <label className='label-text'>Email or phone number</label>
+                      </label>
+                      <label className='input-container'>
+                      <input className='input-field' type="text" />
+                      <label className='label-text'>Username</label>
+                      </label>
+                      <label className='input-container'>
+                      <input className='input-field' type="password" />
+                      <label className='label-text'>Password</label>
+                      </label>
+                      <button className='Submit'>Sign Up</button>
                   </form>
               </div>
           </div>

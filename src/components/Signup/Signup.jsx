@@ -6,6 +6,8 @@ function Signup() {
       <section className='Signup' style={{backgroundImage: `url()`}}>
           <img  className='Signuplogo' src="Assets/images/Netflix-Logo.png" alt="" />
           <img className='background-Banner-Netflix' src="Assets/images/background-Banner-Netflix.jpg" alt="" />
+          <div className="Signup-Container">
+          </div>
       </section>
   )
 }

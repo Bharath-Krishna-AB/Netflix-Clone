@@ -1,6 +1,9 @@
 .Signup{
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -9,12 +12,21 @@
     position: fixed;
     top: 25px;
     left: 25px;
+    z-index: 1;
 }
 
 .background-Banner-Netflix{
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: -1;
     opacity: 0.5;
+}
+
+.Signup-Container{
+    margin-top: 3rem;
+    width: 30rem;
+    height: 40rem;
+    background-color: rgba(0,0,0,.75);
+    border-radius: 5px;
+    position: fixed;
 }

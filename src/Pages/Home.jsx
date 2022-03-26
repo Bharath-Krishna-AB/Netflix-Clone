@@ -1,11 +1,35 @@
-import React,{Fragment} from 'react'
+import React,{Fragment,useEffect,useState} from 'react'
 import Banner from '../components/Banner/Banner'
 import Navbar from '../components/Navbar/Navbar'
 import Poster from '../components/Poster/Poster'
 import { ACTION, DRAMA, HORROR, THRILLER } from '../constants/constants'
 import { BannerData } from '../movie-objectDatas/BannerObj'
+import {auth} from '../Firebase/config'
+import {onAuthStateChanged,signOut} from 'firebase/auth'
+import { useNavigate } from 'react-router-dom'
+
 
 function Home() {
+
+    const navigate = useNavigate()
+    const [userData,SetUserData] = useState()
+
+    
+  useEffect(() => {
+    
+    onAuthStateChanged(auth, user =>{
+      if(user){
+        SetUserData({
+          name: user.displayName,
+          photoUrl: user.photoURL,
+        })
+      }else{
+        SetUserData(null)
+        navigate('/')
+      }
+    })
+  }, [])
+
     return (
         <Fragment>
             <Navbar/>

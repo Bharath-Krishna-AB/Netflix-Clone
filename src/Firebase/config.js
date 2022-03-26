@@ -1,4 +1,5 @@
 import {initializeApp} from 'firebase/app'
+import {GoogleAuthProvider , getAuth} from 'firebase/auth'
 
 
 const firebaseConfig = {
@@ -11,4 +12,9 @@ const firebaseConfig = {
     measurementId: "G-6ES655K2DR"
   };
 
-  export const firebase = initializeApp(firebaseConfig)
+  const firebase = initializeApp(firebaseConfig)
+
+  const provider = new GoogleAuthProvider()
+  const auth = getAuth()
+
+  export {firebase,provider,auth}

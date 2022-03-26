@@ -3,7 +3,7 @@ import './Navbar.css'
 import {auth} from '../../Firebase/config'
 import {signOut} from 'firebase/auth'
 
-function Navbar() {
+function Navbar({userData}) {
 
     const [scroll, setScroll] = useState(false)
 
@@ -20,7 +20,6 @@ function Navbar() {
         }
     }, [])
 
-
     return (
         <nav className={`Navbar ${scroll ? 'BlackNav': ''}`}>
             <div className='left-side'>
@@ -36,7 +35,7 @@ function Navbar() {
 
             </div>
             </div>
-            <img onClick={() => signOut(auth)} className='avatar' src="assets/images/avatar.png" alt="" /> 
+            <img onClick={() => signOut(auth)} className='avatar' src={userData?.photoUrl} alt="" /> 
         </nav>
     )
 }

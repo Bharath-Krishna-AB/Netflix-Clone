@@ -32,7 +32,7 @@ function Home() {
 
     return (
         <Fragment>
-            <Navbar/>
+            <Navbar signOut={signOut} />
             <Banner/>
             <Poster title='Netflix-Originals' genreData={BannerData} originals={true}/>
             <Poster title='Action' genreData={ACTION} originals={false}/>

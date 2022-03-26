@@ -1,5 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import './Navbar.css'
+import {auth} from '../../Firebase/config'
+import {signOut} from 'firebase/auth'
 
 function Navbar() {
 
@@ -34,7 +36,7 @@ function Navbar() {
 
             </div>
             </div>
-            <img className='avatar' src="assets/images/avatar.png" alt="" /> 
+            <img onClick={() => signOut(auth)} className='avatar' src="assets/images/avatar.png" alt="" /> 
         </nav>
     )
 }

@@ -37,7 +37,7 @@ function Signup() {
                       <button className='Submit'>Sign Up</button>
                   </form>
               </div> */}
-              <button onClick={()=> signInWithPopup(auth,provider)}>Login with Google</button>
+              <button className='Submit' onClick={()=> signInWithPopup(auth,provider)}>Login with Google</button>
           </div>
       </section>
   )
